@@ -10,7 +10,8 @@ This project performs data analysis on NYC taxi trip data stored in Parquet form
 - **Memory Configuration**: Configures Spark to optimize memory and CPU usage for large data processing.
 
 ## Project Structure
-- **`nyc_taxi_analysis.py`**: The Python script that uses PySpark to read, process, and analyze the NYC taxi data.
+- **`nyc_taxi_analysis.py`**: The main Python script that uses PySpark to read, process, and analyze the NYC taxi data.
+- **`nyctaxi-practice.py`**: An additional practice script for testing and further analysis on the NYC taxi data.
 
 ## How to Run the Project
 
@@ -29,19 +30,21 @@ This project performs data analysis on NYC taxi trip data stored in Parquet form
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/arnold-shakirov/nyc-taxi-analysis.git
+    git clone https://github.com/arnold-shakirov/Nyc-Taxi-Analysis.git
     ```
 
 2. Navigate to the project directory:
-    ```bash
-    cd nyc-taxi-analysis
-    ```
 
 3. Ensure the NYC taxi data in Parquet format is stored in the correct path (e.g., `/data/nyctaxi/set1/*.parquet`). Adjust the path in the script if needed.
 
 4. Run the PySpark script:
     ```bash
     python nyc_taxi_analysis.py
+    ```
+
+    Alternatively, you can also run the practice script:
+    ```bash
+    python nyctaxi-practice.py
     ```
 
 ### Output
@@ -51,7 +54,7 @@ The script performs the following operations:
 3. **Average Fare by Payment Type**: Prints the average fare amount for each payment type.
 4. **Trips per Month**: Calculates and displays the total number of trips per month across all years.
 
-Sample output:
+#### Sample Output:
 ```text
 Index(['fare_amount', 'payment_type', 'tpep_pickup_datetime', ...])
 <class 'pandas.core.frame.DataFrame'>
